@@ -1,0 +1,30 @@
+<h2>Description</h2>
+
+<p>At this stage, our minimalistic parking lot has two parking spots. Let's assume that the first spot is occupied and the second one is free.</p>
+
+<p>The parking lot should allow the user to park the car. This is implemented using the <code>park</code> command. After the user has entered this command, the registration number and the colour of the car should be specified. For example, <code>park KA-01-HH-1234 Blue</code>. The registration number should not contain spaces. The colour can be written both in uppercase and lowercase letters.</p>
+
+<p>As the first spot is already taken, the program should allocate the second spot and print: <code>Blue car parked on the spot 2.</code> The colour should match the user's input.</p>
+
+<p>To pick up the car, the user should print the command <code>leave</code> and then the number of the parking spot: for example, <code>leave 1</code>. If there is no car in the given spot, the program should print an error: <code>There is no car in the spot 1.</code> Otherwise, it should notify the user that the spot is now available: <code>Spot 1 is free.</code></p>
+
+<h2>Examples</h2>
+
+<p>The symbol <code>&gt;</code> represents the user's input. Note that it isn't part of the input.</p>
+
+<p>Example 1:</p>
+
+<pre><code class="language-no-highlight">&gt; park KA-01-HH-1234 Blue
+Blue car parked on the spot 2.</code></pre>
+
+<p>Example 2:</p>
+
+<pre><code>&gt; leave 1
+Spot 1 is free.</code></pre>
+
+<p>Example 3:</p>
+
+<pre><code class="language-no-highlight">&gt; leave 2
+There is no car in the spot 2.</code></pre>
+
+<p>[ALERT-primary]Do not use <code>readLine()</code> to read data from the input stream, but better use <code>Scanner</code>. Checking solutions that use <code>readLine()</code> does not work yet.[/ALERT]</p>

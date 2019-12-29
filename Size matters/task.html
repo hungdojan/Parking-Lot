@@ -1,0 +1,30 @@
+<h2>Description</h2>
+
+<p>In real life, parking lots come in various sizes: from small ones by the townhouses to really large lots by malls or stations. At this stage, we will get better at "art imitating life" and make our program customizable by adding a  <code>create</code> command that allows us to specify the number of spots. For example, the command <code>create 3</code> makes a parking lot with three spots. The number of spots should be positive. The program output should be the following: <code>Created a parking lot with 3 spots.</code></p>
+
+<p>The other commands like <code>park</code><strong> </strong>or <code>leave</code><strong> </strong>should return an error - <code>Sorry, parking lot is not created.</code> - until the user enters the <code>create</code><strong> </strong>command. If the user calls <code>create</code><strong> </strong>again, the previous parking state should be reset.</p>
+
+<p>Also, it is important to keep track of which spots are occupied by which cars. For this, add a <code>status</code> command that prints all occupied spots in the ascending order. For each spot, it should print the spot number, the plate registration number and the colour, all separated by spaces like in the example below. If there are no occupied spots, the program should print: <code>Parking lot is empty.</code>.</p>
+
+<h2>Example</h2>
+
+<p> The symbol <code>&gt;</code> represents the user's input.</p>
+
+<pre><code class="language-no-highlight">&gt; park KA-01-HH-9999 White
+Sorry, parking lot is not created.
+&gt; create 3
+Created a parking lot with 3 spots.
+&gt; status
+Parking lot is empty.
+&gt; park KA-01-HH-9999 White
+White car parked on the spot 1.
+&gt; park KA-01-HH-3672 Green
+Green car parked on the spot 2.
+&gt; park Rs-P-N-21 Red
+Red car parked on the spot 3.
+&gt; leave 2
+Spot 2 is free.
+&gt; status
+1 KA-01-HH-9999 White
+3 Rs-P-N-21 Red
+&gt; exit</code></pre>
